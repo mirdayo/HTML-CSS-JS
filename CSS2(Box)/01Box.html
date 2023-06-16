@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      div {
+        background-color: orange;
+      }
+      .d1 {
+        width: 300px;
+        height: 300px;
+        /* top, right, bottom, left 10px */
+        /* margin: 10px; */
+        /* top, bottom : 20px, right, left : 40px */
+        /* margin: 20px 40px; */
+        /* top : 10px, right : 20px, bottom : 30px, left : 20px */
+        /* margin: 10px 20px 30px; */
+        /* top : 10px, right : 20px, bottom : 30px, left : 40px  */
+        /* margin: 10px 20px 30px 40px; */
+        /* margin-top: 50px;
+        margin-right: 25px;
+        margin-bottom: 100px;
+        margin-left: 100px; */
+        /* 중요 텍스트만 중앙에 두는거랑 마진으로 박스 자체를 중앙에 두는거 잘 구분 */
+        text-align: center;
+        line-height: 300px;
+        margin: 10px auto;
+      }
+      .parent {
+        width: 400px;
+        height: 400px;
+        position: relative;
+      }
+      .son {
+        width: 150px;
+        height: 150px;
+        /* margin-top: 50px;
+        margin-left: 50px; */
+        /* margin: auto; */
+        /* margin-top: 50px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+        margin-left: 50px; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        background-color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d1">HELLO WORD</div>
+
+    <div class="parent">
+      <div class="son"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+/* 구글 아이콘 */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+/* 전체 포지션 */
+.container {
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+div {
+  display: block;
+}
+/* 로고 이미지 */
+.container > .member-logo {
+  width: 180px;
+  height: 150px;
+  margin: auto;
+  display: block;
+  background-image: url("./image/KakaoTalk_20230420_151239256.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/* 로그인 컨텐츠 */
+#login-id {
+  width: 320px;
+  height: 34px;
+  border: 0;
+  outline: 0;
+}
+#login-pw {
+  width: 320px;
+  height: 34px;
+  border: 0;
+  outline: 0;
+}
+.container > .content {
+  display: block;
+  text-align: center;
+}
+.container > .content > .login-text {
+  width: auto;
+  height: 35px;
+  display: inline;
+  text-align: center;
+  font-family: "NanumGothic";
+  font-size: 2rem;
+}
+.container > .content > form > .login-box1 {
+  height: 150px;
+  margin: 10px auto 5px;
+}
+.container > .content > form > .login-box1 > .login-box2 {
+  /* height: 160px; */
+}
+/* 아이디 인풋 */
+.container > .content > form > .login-box1 > .login-box2 > .input-id {
+  position: relative;
+  border: 0.5px solid gray;
+  border-radius: 8px 8px 0px 0px;
+  margin: 25px auto 0px;
+  /* padding: 5px 5px 5px 0px; */
+  width: 430px;
+  height: 40px;
+}
+#login-id {
+}
+/* 로그인 아이콘 */
+.container
+  > .content
+  > form
+  > .login-box1
+  > .login-box2
+  > .input-id
+  > .material-symbols-id {
+  position: absolute;
+  margin: 8px 0px 0px 15px;
+}
+/* 패스워드 인풋 */
+.container > .content > form > .login-box1 > .login-box2 > .input-pw {
+  position: relative;
+  border: 0.5px solid gray;
+  border-radius: 0px 0px 8px 8px;
+  margin: auto;
+  /* padding: 5px 5px 0px 0px; */
+  width: 430px;
+  height: 40px;
+}
+/* 패스워드 아이콘 */
+.container
+  > .content
+  > form
+  > .login-box1
+  > .login-box2
+  > .input-pw
+  > .material-symbols-pw {
+  position: absolute;
+  margin: 8px 0px 0px 15px;
+}
+/* 로그인 버튼 */
+.container > .content > form > .login-box1 > .login-btn-wrap {
+}
+.container > .content > form > .login-box1 > .login-btn-wrap > .login-btn {
+  width: 250px;
+  height: 38px;
+  margin: 25px 0px 0px 0px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid black;
+}
+/* 회원가입 */
+.container > .content > .join-btn-wrap {
+}
+.container > .content > .join-btn-wrap > .join-btn {
+  width: 250px;
+  height: 38px;
+  margin: 20px 0px 0px 0px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid lightgray;
+}
+/* 로그인 아래 */
+.container > ul {
+  width: 100%;
+  padding-top: 15px;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+.container > ul > li {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.container > ul > li:nth-child(2):before {
+  content: "|   ";
+}
+.container > ul > li:nth-child(3):before {
+  content: "|   ";
+}
+/* 로그인 버튼에 커서 올라갔을때 효과 */
+.login-btn:focus {
+  animation-delay: 2s;
+}
+/* 인풋박스 클릭 효과 */
+#login-id:focus {
+  position: relative;
+  width: 420px;
+  height: 33px;
+  border: 3px solid grey;
+  border-radius: 6px 6px 0px 0px;
+  background-color: white;
+}
+#login-pw:focus {
+  position: relative;
+  width: 420px;
+  height: 33px;
+  border: 3px solid grey;
+  border-radius: 0px 0px 6px 6px;
+  background-color: white;
+}

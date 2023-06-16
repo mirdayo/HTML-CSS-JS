@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        margin-bottom: 10px;
+        background-color: orange;
+      }
+      body {
+        width: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- px 고정 크기 -->
+    <div style="width: 700px"></div>
+
+    <!-- % 가변 길이, 상위 태그(body 같은거)를 기준으로 %만큼 크기 지정 -->
+    <div style="width: 60%">
+      <p style="width: 60%; height: 70%; background-color: royalblue"></p>
+    </div>
+
+    <!-- vw, vh 보고 있는 뷰포트를 기준으로 잡힘 -->
+    <div style="width: 50vw">
+      <p style="width: 60vw; height: 50px; background-color: royalblue"></p>
+    </div>
+  </body>
+</html>

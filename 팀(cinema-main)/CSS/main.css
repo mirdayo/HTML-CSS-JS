@@ -1,0 +1,80 @@
+main{}
+main>div{
+    display:block;
+}
+.subsection{
+    /* border: 1px solid; */
+    margin-top:-196px;
+    height : 774px;
+    width:100%;
+    position:relative;
+
+}
+main>.subsection>.sub1{
+    position: relative;
+}
+main>.subsection>.sub1>.sub2{}
+main>.subsection>.sub1>.sub2>.front{
+    width:100%;
+    display: block;
+}
+main>.subsection>.sub1>.sub2>.front>a{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sub1{
+    position:relative;
+}
+.sub1>.sub2{
+    position:relative;
+    transform-style:preserve-3d;
+    transition:1.5s;
+}
+.sub2>.front img{
+    width:100%;
+    height: 774px;
+    z-index:-10;
+    vertical-align: top;
+    position:absolute;
+}
+.sub2>.back img{
+    width:100%;
+    height: 774px;
+    z-index:-10;
+    vertical-align: top;
+    position:absolute;
+}
+.sub2>.front,
+.sub2>.back{
+    /* position:relative; */
+    backface-visibility: hidden;
+}
+.sub2>.front{
+    z-index:2;
+    /* display: flex; */
+}
+.sub2>.back{
+    display:flex;
+    transform: rotateY(180deg);
+}
+.sub1:hover .sub2{
+    transform:rotateY(180deg);
+}
+main>.contents{
+    border:1px solid;
+    width: 100%;
+    height: 184px;
+    
+}
+main>.subsection>.contents>.contentslist{
+    height:262px;
+}
+main>.subsection>.contents>.contentslist>.mainmovie{
+   height:262px;
+   display: block;
+}
+main>.subsection>.contents>.contentslist>.mainmovie>a{
+   width: 100px;
+   height: 100px;
+}
+   

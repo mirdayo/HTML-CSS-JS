@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .d1 {
+      }
+      .d1 > input[type="checkbox"] {
+        display: none;
+      }
+      .d1 > label {
+        display: block;
+        width: 45px;
+        height: 45px;
+        /* border: 1px solid black; */
+        background-image: url("./SVG/toggle_on_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      .d1 > input[type="checkbox"]:checked + label {
+        background-image: url("./SVG/toggle_off_FILL0_wght400_GRAD0_opsz48.svg");
+      }
+      .d2 {
+      }
+      .d2 > input[type="radio"] {
+        display: none;
+      }
+      .d2 > label {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        border: 1px solid lightgray;
+        border-radius: 50%;
+      }
+      #r1:checked + label {
+        background-image: url("./SVG/male_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      #r2:checked + label {
+        background-image: url("./SVG/female_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      .d3 {
+      }
+      .d3 > input[type="checkbox"] {
+      }
+      .d3 > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50px;
+      }
+
+      /* 이미지가 없고 체크 시 이미지 뜨기 */
+      /* #climing:checked + label {
+        background-image: url("./SVG/hiking_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      #swiming:checked + label {
+        background-image: url("./SVG/pool_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      #reading:checked + label {
+        background-image: url("./SVG/book_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      #running:checked + label {
+        background-image: url("./SVG/sprint_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      } */
+
+      /* 이미지가 떠 있고 체크 시 이미지 사라짐 */
+      /* .climig-label {
+        background-image: url("./SVG/hiking_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      .swimig-label {
+        background-image: url("./SVG/pool_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      .reading-label {
+        background-image: url("./SVG/book_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      .running-label {
+        background-image: url("./SVG/sprint_FILL0_wght400_GRAD0_opsz48.svg");
+        background-size: 100%;
+      }
+      #climing:checked + label {
+        background-image: none;
+      }
+      #swiming:checked + label {
+        background-image: none;
+      }
+      #reading:checked + label {
+        background-image: none;
+      }
+      #running:checked + label {
+        background-image: none;
+      } */
+
+      /* 이미지가 떠 있고 이미 체크 된 상태에서 체크가 풀리면 이미지가 사라짐
+         ㄴ해당 input 타입에 checked를 작성해둠 */
+      #climing:checked + label {
+        background-image: url("./SVG/hiking_FILL0_wght400_GRAD0_opsz48.svg");
+      }
+      #swiming:checked + label {
+        background-image: url("./SVG/pool_FILL0_wght400_GRAD0_opsz48.svg");
+      }
+      #reading:checked + label {
+        background-image: url("./SVG/book_FILL0_wght400_GRAD0_opsz48.svg");
+      }
+      #running:checked + label {
+        background-image: url("./SVG/sprint_FILL0_wght400_GRAD0_opsz48.svg");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d1">
+      <input type="checkbox" id="chk1" /><label for="chk1"></label>
+    </div>
+    <hr />
+    <div class="d2">
+      <input type="radio" name="gender" value="male" id="r1" />
+      <label for="r1"></label>
+      <input type="radio" name="gender" value="female" id="r2" />
+      <label for="r2"></label>
+    </div>
+    <hr />
+    <!-- 취미 각각에 맞는 이미지를 찾아서 label의 백그라운드로 하기(숙제) -->
+    <div class="d3">
+      <input type="checkbox" id="climing" checked />
+      <label for="climing" class="climig-label"></label>
+      <input type="checkbox" id="swiming" checked />
+      <label for="swiming" class="swimig-label"></label>
+      <input type="checkbox" id="reading" checked />
+      <label for="reading" class="reading-label"></label>
+      <input type="checkbox" id="running" checked />
+      <label for="running" class="running-label"></label>
+    </div>
+  </body>
+</html>

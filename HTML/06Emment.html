@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ol태그안에 li 4개 생성 자식으로 한번에 생성 ol>li*4 -->
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+    <!-- ol태그안에 li 4개 생성 content 내용 넣어서 생성 ol>li*4[content] -->
+    <ol>
+      <li content=""></li>
+      <li content=""></li>
+      <li content=""></li>
+      <li content=""></li>
+    </ol>
+    <!-- ol태그안의 li 4개 생성 content 내용 넣고 순번 정하기 ol>li*4[content$] -->
+    <ol>
+      <li content1=""></li>
+      <li content2=""></li>
+      <li content3=""></li>
+      <li content4=""></li>
+    </ol>
+    <!-- ol>li*4+ul*2 같은 형제 ul 2명을 더 만들겠다. -->
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <ul></ul>
+      <ul></ul>
+    </ol>
+    <!-- ol>li*4+ul*2>li*3{TEST$} -->
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <ul>
+        <li>TEST1</li>
+        <li>TEST2</li>
+        <li>TEST3</li>
+      </ul>
+      <ul>
+        <li>TEST1</li>
+        <li>TEST2</li>
+        <li>TEST3</li>
+      </ul>
+    </ol>
+    <ul>
+      <li></li>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </ul>
+    <!-- ul>li+ul>li*4{TEST$} -->
+    <ul>
+      <li></li>
+      <ul>
+        <li>TEST1</li>
+        <li>TEST2</li>
+        <li>TEST3</li>
+        <li>TEST4</li>
+      </ul>
+    </ul>
+  </body>
+</html>

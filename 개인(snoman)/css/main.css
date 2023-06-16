@@ -1,0 +1,49 @@
+        /* 메인스타일 */
+        main{
+            width:1500px;
+            height: 100%;
+            position:relative;
+            left:0px;
+            right:0px;
+            top:0px;
+            bottom:0px;
+            margin-top:-120px;
+            /* margin:auto; */
+            /* z-index:2;         */
+        }
+        main>.main{
+            width:1500px;
+            height:550px;
+            position:relative;
+            transform-style:preserve-3d;
+            transition:1.5s;
+        }
+        main>.main>.front,
+        main>.main>.back{
+            width:100%;
+            height: 100%;
+            position: absolute;
+            left:0px;
+            top:0px;
+            backface-visibility: hidden;
+            
+        }
+        main>.main>.front{
+            background-image: url(https://fimafia.co.kr/artfinger/main/main01.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            z-index:2; 
+        }
+        main>.main>.back{
+            background-image: url(https://www.fimafia.com/artfinger/main/main02.jpg);
+            transform: rotateY(180deg);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-position:center;
+            background-size:cover;
+        }
+        main:hover .main{
+            transform:rotateY(180deg);
+        }

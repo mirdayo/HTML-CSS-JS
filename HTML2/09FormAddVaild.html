@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        </style>
+</head>
+<body>
+    <form action="test.jsp" method="get">
+    <div>
+        <label for="username"> 이름 :</label> <input type="text" name="username" id="username" required><br>
+    </div>
+    <div>
+        <label for="age">나이 :</label> <input type="text" name="age" id="age" pattern="(?=.*[0-9]).{1,3}" oninvalid="this.setCustomValidity('숫자로 입력해주세요.')" required><br>
+    </div>
+    <div>
+        <label for="addr">주소 :</label> <input type="text" name="addr" id="addr" required><br>
+    </div>
+    <div>
+        <label for="usermail">메일 :</label> <input type="email" name="usermail" id="usermail" pattern=".+(com|COM)" placeholder="@naver.com" required><br>
+    </div>
+    <div>
+        성별 : <input type="radio" name="gender" value="male" required>남 <input type="radio" name="gender" value="female" required>여<br>
+    </div>
+    <div>
+        취미 : <br>
+        <input type="checkbox" name="hobby" value="hiking">등산&nbsp;
+        <input type="checkbox" name="hobby" value="golf">골프&nbsp;
+        <input type="checkbox" name="hobby" value="swimming">수영&nbsp;
+        <input type="checkbox" name="hobby" value="reading">독서&nbsp;<br>
+    </div>
+    <div>
+        <label for="userid">ID : <input type="text" name="userid" id="userid" placeholder="필수 항목">
+    </div>
+    <div>
+        <label for="userpass">Password : <input type="password"
+            name="userpass"
+            id="userpass"
+            placeholder="필수 항목"
+            pattern="((?=(?:.*[a-z]){3})(?=(?:.*[A-Z]){3})(?=(?:.*[0-9]){3})(?=(?:.*[!@#$%^&*()~]){3})).{10,18}"
+            oninvalid="this.setCustomValidity('영어 소대문자, 숫자, 특수문자를 각 3개이상씩 포함한 10~18자 이내로 입력해주세요.')"
+            required></label>
+    </div>
+    <label for="memo">메모 :</label><br>
+    <textarea name="memo" id="memo" cols="30" rows="10" style="resize: none;"></textarea><br>
+    </div>
+    <div>
+        PHONE : <select name="ph--ln">
+            <option value="010" selected>010</option>
+            <option value="02" >02</option>
+            <option value="053" >053</option>
+        </select>
+        <span>-</span>
+        <input pattern="[0-9]{3,4}" oninvalid="this.setCustomValidity('3~4자리 번호를 입력해주세요.')" required>
+        <span>-</span>
+        <input pattern="[0-9]{4}" oninvalid="this.setCustomValidity('4자리 번호를 입력해주세요.')" required>
+    </div>
+        <input type="submit" class="btn btn-success">
+    </form>
+</body>
+</html>

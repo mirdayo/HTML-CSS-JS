@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+      }
+      body {
+      }
+      ul {
+        list-style: none;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .one--depth {
+        width: 200px;
+      }
+      .one--depth > li {
+        position: relative;
+      }
+      .one--depth > li > a {
+        display: block;
+      }
+      .one--depth > li > .two--depth {
+        position: absolute;
+        width: 100%;
+        left: 200px;
+        top: 0;
+        display: none;
+      }
+      .one--depth > li > .two--depth > li {
+      }
+      .one--depth > li > .two--depth > li > a {
+        display: block;
+      }
+      .one--depth > li:hover .two--depth {
+        display: block;
+      }
+      .one--depth > li > .two--depth > li > .three--depth {
+        position: absolute;
+        width: 100%;
+        left: 200px;
+        top: 0;
+        display: none;
+      }
+      .one--depth > li > .two--depth > li > .three--depth > li {
+      }
+      .one--depth > li > .two--depth > li > .three--depth > li > a {
+      }
+      .one--depth > li > .two--depth > li:hover .three--depth {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="one--depth">
+      <li>
+        <a href="">menu1</a>
+        <ul class="two--depth">
+          <li><a href="">submenu</a></li>
+          <ul class="three--depth">
+            <li><a href="">submenu1</a></li>
+            <li><a href="">submenu2</a></li>
+            <li><a href="">submenu3</a></li>
+            <li><a href="">submenu4</a></li>
+          </ul>
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">menu2</a>
+        <ul class="two--depth">
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">menu3</a>
+        <ul class="two--depth">
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">menu4</a>
+        <ul class="two--depth">
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+          <li><a href="">submenu</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

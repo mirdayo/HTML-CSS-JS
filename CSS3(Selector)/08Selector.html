@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* :first-child - 첫번째 자식 요소
+        :last-child - 마지막 자식 요소
+        :nth-child(n) - n번째 자식 요소 */
+      * {
+      }
+      body {
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .depth1 {
+      }
+      .depth1 > li {
+      }
+      .depth1 > li > a:first-child {
+        background-color: orange;
+      }
+      .depth1 > li > .depth2 {
+      }
+      /* .depth1 > li > .depth2 > li:first-child {
+        background-color: royalblue;
+      }
+      .depth1 > li > .depth2 > li:last-child {
+        background-color: red;
+      }
+      .depth1 > li > .depth2 > li:nth-child(2) {
+        background-color: aquamarine;
+      }
+      .depth1 > li > .depth2 > li:nth-child(3) {
+        background-color: gray;
+      }
+      .depth1 > li > .depth2 > li:nth-child(2n) {
+        background-color: yellow;
+    }
+      .depth1 > li > .depth2 > li:nth-child(2n + 1) {
+        background-color: blue;
+      } */
+      .depth1 > li > .depth2 > li:nth-child(even) {
+        background-color: aquamarine;
+      }
+      .depth1 > li > .depth2 > li:nth-child(odd) {
+        background-color: green;
+      }
+      .depth1 > li > .depth2 > li > a {
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="depth1">
+      <li>
+        <a href="">Menu1</a>
+        <ul class="depth2">
+          <li><a href="">Submenu1</a></li>
+          <li><a href="">Submenu2</a></li>
+          <li><a href="">Submenu3</a></li>
+          <li><a href="">Submenu4</a></li>
+          <li><a href="">Submenu5</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Menu2</a>
+        <ul class="depth2">
+          <li><a href="">Submenu1</a></li>
+          <li><a href="">Submenu2</a></li>
+          <li><a href="">Submenu3</a></li>
+          <li><a href="">Submenu4</a></li>
+          <li><a href="">Submenu5</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Menu3</a>
+        <ul class="depth2">
+          <li><a href="">Submenu1</a></li>
+          <li><a href="">Submenu2</a></li>
+          <li><a href="">Submenu3</a></li>
+          <li><a href="">Submenu4</a></li>
+          <li><a href="">Submenu5</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Menu4</a>
+        <ul class="depth2">
+          <li><a href="">Submenu1</a></li>
+          <li><a href="">Submenu2</a></li>
+          <li><a href="">Submenu3</a></li>
+          <li><a href="">Submenu4</a></li>
+          <li><a href="">Submenu5</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 2px;
+        font-size: 0.5rem;
+        box-sizing: border-box;
+      }
+      body {
+      }
+      ul {
+        list-style: none;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .wrapper {
+        width: 100%;
+      }
+      .wrapper > header {
+        /* height: 100px; */
+        border: 1px solid;
+      }
+      .wrapper > header > .parent {
+        border: 1px solid;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .wrapper > header > .parent > .logo {
+        border: 1px solid;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        align-content: center;
+        text-align: center;
+      }
+      .wrapper > header > .parent > ul {
+        border: 1px solid;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+      .wrapper > header > .parent > ul > li {
+        border: 1px solid;
+        position: relative;
+      }
+      .wrapper > header > .parent > ul > li > a {
+        display: block;
+      }
+      .wrapper > header > .parent > ul > li > a::before {
+      }
+      .wrapper > header > nav {
+        border: 1px solid;
+        /* height: 50px; */
+      }
+      .wrapper > header > nav > ul {
+        /* height: 50px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .wrapper > header > nav > ul > li {
+        border: 1px solid;
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 120px;
+      }
+      .wrapper > header > nav > ul > li > a {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="parent">
+          <div class="logo">Logo image</div>
+          <ul>
+            <li><a href="">나의정보</a></li>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">로그아웃</a></li>
+            <li><a href="">기타</a></li>
+          </ul>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">MENU1</a></li>
+            <li><a href="">MENU2</a></li>
+            <li><a href="">MENU3</a></li>
+            <li><a href="">MENU4</a></li>
+            <li><a href="">MENU5</a></li>
+            <li><a href="">MENU6</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>

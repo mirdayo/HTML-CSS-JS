@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      labe {
+        font-size: 0.6rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="test.jsp" method="get">
+      <div>
+        <label for="username">Name :</label><br /><input
+          type="text"
+          id="username"
+          name="username"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="head">Title :</label><br /><input
+          type="text"
+          id="head"
+          name="head"
+        />
+      </div>
+      <br />
+      <label for="memo">contents :</label>
+      <br /><textarea
+        name=""
+        id="memo"
+        name="memo"
+        cols="50"
+        rows="10"
+      ></textarea>
+      <div>
+        <br />
+        <label for="link">URL :</label><br /><input
+          type="text"
+          id="link"
+          name="link"
+        /><br />
+      </div>
+      <br />
+      <div>
+        <label for="usermail">Email :</label><br /><input
+          type="email"
+          id="usermail"
+          name="usermail"
+          placeholder="example@asd.com"
+        /><br />
+      </div>
+      <br />
+      <input type="submit" name="save" value="저장" />
+    </form>
+  </body>
+</html>
