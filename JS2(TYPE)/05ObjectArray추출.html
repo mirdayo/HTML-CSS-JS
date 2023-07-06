@@ -67,6 +67,15 @@
             return totalprice + (price*amt);
         }, 0);
         console.log("총 지불액 : ", total);
+        console.log("-----------------------");
+        const total2 = order1.map((item)=>{
+            return {price: parseInt(item.price.replace(",","").replace("원","")), amt:item.amt}
+        }).reduce((totalprice, item)=>{
+            const price = item.price;
+            const amt = item.amt;
+            return totalprice + (price*amt);
+        }, 0)
+        console.log("총 지불액 : " + total2);
 
     </script>
 </body>
