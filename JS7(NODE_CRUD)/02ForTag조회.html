@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text">
+        <input type="text">
+    </form>
+    <form action="">
+        <input type="text">
+        <input type="text">
+    </form>
+    <form action="">
+        <input type="text">
+        <input type="text">
+    </form>
+
+    <script>
+        const formEls = document.forms;
+        Array.from(formEls);
+        //index
+        formEls[0].style.backgroundColor = 'orange';
+        formEls[0].firstElementChild.value = '1234';
+        console.log(formEls[0].childNodes);
+        formEls[0].childNodes[3].valuea = 'bbb';
+        //Array.from(forrmEls)
+
+        // 이름부여 접근
+        console.log(document.frm03);
+        document.frm03.style.backgroundColor = 'blue';
+        document.frm03.childNodes[1].value = 'aaa';
+        document.frm03.children[0].value = 'oaoa';
+        document.frm03.children[1].value = 'oaoa';
+    </script>
+</body>
+</html>
